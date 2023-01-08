@@ -4,6 +4,7 @@ header {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  position: relative;
 }
 
 nav {
@@ -26,11 +27,14 @@ a:hover {
 }
 
 .resume-button {
-  color: white;
-  background-color: #333;
+  border: 1px solid #38BFA7;
   border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  color: #38BFA7;
 }
 
 .resume-button:hover {
-  background-color: #666;
+  transition: all 0.2s ease-in-out;
+  color: #38BFA7;
+  background-color: rgba(56, 191, 167, 0.11);
 }
