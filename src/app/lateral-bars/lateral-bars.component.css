@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+aside.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+  display: flex;
+  flex-direction: column;
+}
+
+aside.sidebar.left {
+  left: 0;
+  bottom: 0;
+}
+
+.logos {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: auto;
+  z-index: 10;
+  display: block;
+}
+
+.logos ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: inherit;
+  justify-content: center;
+}
+
+.logos ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  filter: brightness(1);
+  border-radius: 50%;
+}
+
+.logos ul li a{
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.logos ul::after{
+  content: "";
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.logos ul li:hover{
+  transition: all 0.5s ease-in-out;
+  filter: brightness(1.5);
+  transform: scale(1.2) rotate(10deg);
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+aside.sidebar.right {
+  right: 0;
+}
+
+.mailBox{
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+}
+
+.mail{
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.mail a{
+  margin: 20px auto;
+  padding: 10px;
+  letter-spacing: 0.1em;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.mail a:hover{
+  transition: all 0.5s ease-in-out;
+  filter: brightness(1.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mail::after{
+  content: "";
+  width: 1px;
+  height: 90px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+}
