@@ -8,6 +8,7 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { WhereIVeWorkedComponent } from './where-ive-worked/where-ive-worked.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LateralBarsComponent,
     IntroductionComponent,
     AboutMeComponent,
-    WhereIVeWorkedComponent
+    WhereIVeWorkedComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
