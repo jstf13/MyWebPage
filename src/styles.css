@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #38BFA7;
+  --secondary-color: rgba(82, 69, 130, 0.04);
+  --tertiary-color: #8FE1A2;
+  --quaternary-color: #367BC3;
+  --transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  --tab-height: 45px;
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --fz-xs: 12px;
+}

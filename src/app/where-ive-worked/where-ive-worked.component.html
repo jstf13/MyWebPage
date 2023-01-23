@@ -1,0 +1,34 @@
+<div class="masterBox">
+  <div class="title">
+    <h1>Where I've worked</h1>
+  </div>
+  <div class="contentBox">
+    <div class="job-tabs">
+      <div class="sliding-div" [style.transform]="getTranslation()"></div>
+      <button class="tab" (click)="onButtonClick(0)" data-tab="1">Pyxis</button>
+      <button class="tab" (click)="onButtonClick(1)" data-tab="2">Sons of Gods</button>
+      <button class="tab" (click)="onButtonClick(2)" data-tab="3">La finca</button>
+      <button class="tab" (click)="onButtonClick(3)" data-tab="4">Evolution center</button>
+    </div>
+
+    <div class="job-content">
+      <div class="job-content-item" data-tab="1" *ngIf="selectedButtonId===0" [@fade]>
+        <h2>Pyxis</h2>
+        <p>Pyxis is a company that provides a platform for the creation of mobile applications. I worked as a front-end developer, creating the user interface for the platform.</p>
+      </div>
+      <div class="job-content-item" data-tab="2" *ngIf="selectedButtonId===1" [@fade]>
+        <h2>Sons of Gods</h2>
+        <p>Sons of Gods is a company that provides a platform for the creation of mobile applications. I worked as a front-end developer, creating the user interface for the platform.</p>
+      </div>
+      <div class="job-content-item" data-tab="3" *ngIf="selectedButtonId===2" [@fade]>
+        <h2>La finca</h2>
+        <p>La finca is a company that provides a platform for the creation of mobile applications. I worked as a front-end developer, creating the user interface for the platform.</p>
+      </div>
+      <div class="job-content-item" data-tab="4" *ngIf="selectedButtonId===3" [@fade]>
+        <h2>Evolution center</h2>
+        <p>Evolution center is a company that provides a platform for the creation of mobile applications. I worked as a front-end developer, creating the user interface for the platform.</p>
+      </div>
+    </div>
+  </div>
+</div>
+

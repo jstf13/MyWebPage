@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { LateralBarsComponent } from './lateral-bars/lateral-bars.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { WhereIVeWorkedComponent } from './where-ive-worked/where-ive-worked.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HeaderComponent,
     LateralBarsComponent,
     IntroductionComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    WhereIVeWorkedComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
