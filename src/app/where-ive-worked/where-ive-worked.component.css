@@ -61,3 +61,38 @@
   padding-left: 20px;
   transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
+
+.job-content-item-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.job-content-item-date{
+  margin-top: 2px;
+  font-family: 'Open Sans';
+  font-size: 13px;
+}
+
+ul {
+  display: grid;
+  list-style: none;
+  grid-gap: 20px;
+  padding: 0;
+}
+
+li {
+  font-size: 13px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: start;
+}
+
+li:before {
+  content: "›";
+  color: #06c0a8;
+  margin-right: 8px;
+}
+
+
+
