@@ -1,0 +1,112 @@
+.text{
+  width: 55%;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.1;
+  padding-left: 5%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+}
+
+.text b{
+  color:#06c0a8;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0;
+  grid-column-gap: -50px;
+}
+
+li{
+  font-size: 12px;
+  top: 2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li:before {
+  content: "›";
+  color: #06c0a8;
+  margin-right: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+}
+
+.container__image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("https://i.imgur.com/PnM5dI2.jpeg");
+  background-size: cover;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  overflow-y: visible;
+}
+
+.container__image:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: inherit;
+  background-position: bottom;
+  filter: blur(40px) saturate(0%);
+  transform: scaleY(0.4);
+  transition: ease-in-out 0.4s;
+  border-radius: 120px;
+  transform-origin: right;
+  opacity: 0;
+  z-index: -1;
+}
+.container__image .container__info {
+  position: relative;
+  line-height: 1.8;
+  transition: ease-in-out 0.3s;
+  opacity: 0;
+  z-index: 10000 !important;
+}
+.container__image .container__location {
+  transition-delay: 0.15s;
+}
+.container__image:hover {
+  border-radius: 0;
+  transform: scale(1.1);
+  box-shadow: -3px -80px 44px -31px rgba(0,0,0,0.89) inset;
+  -webkit-box-shadow: -3px -80px 44px -31px rgba(0,0,0,0.89) inset;
+  -moz-box-shadow: -3px -80px 44px -31px rgba(0,0,0,0.89) inset;
+}
+
+.container__image:hover .container__info {
+  transform: translate3d(10%, 300%, 0px);
+  opacity: 1;
+  color: white;
+}
+
+.link {
+  border-bottom: 1px solid transparent;
+  color: #06c0a8;
+  text-decoration: none;
+  transition: ease-in 0.13s;
+}
+.link:hover {
+  background-color: #06c0a8;
+  color: #ffffff;
+}
+

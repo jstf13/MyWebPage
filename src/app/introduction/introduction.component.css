@@ -1,0 +1,63 @@
+.greeting {
+  font-weight: 600;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.name h1 {
+  margin: 0;
+}
+
+.name h2 {
+  margin: 0;
+}
+
+.name .nameText {
+  margin: 0;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.name .job {
+  margin: 0;
+  font-size: clamp(40px, 7vw, 80px);
+  font-weight: 600;
+  line-height: 1.1;
+  color: #38BFA7;
+}
+
+.summary{
+  width: 50%;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.contact-button{
+  border: 1px solid #38BFA7;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  color: #38BFA7;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.contact-button:hover {
+  color: #38BFA7;
+  background-color: rgba(56, 191, 167, 0.11);
+  transition: var(--transition);
+}

@@ -1,0 +1,52 @@
+<div class="masterBox"  [ngsRevealSet]="{reset:true}" [ngsInterval]="150" [ngsSelector]="'.item-worded'">
+  <div class="item-worded title">
+    <h1>Where I've worked</h1>
+  </div>
+  <div class="item-worded contentBox">
+    <div class="job-tabs">
+      <div class="sliding-div" [style.transform]="getTranslation()"></div>
+      <button class="tab" (click)="onButtonClick(0)" data-tab="1">Pyxis</button>
+      <button class="tab" (click)="onButtonClick(1)" data-tab="2">Sons of Gods</button>
+      <button class="tab" (click)="onButtonClick(2)" data-tab="3">Evolution center</button>
+    </div>
+
+    <div class="job-content">
+      <div class="job-content-item" data-tab="1" *ngIf="selectedButtonId===0" [@fade]>
+        <div class="job-content-item-title">Pyxis</div>
+        <div class="job-content-item-date">Jan 2021 - Present</div>
+        <ul>
+          <li>Designed and implemented continuous integration solutions for multinational companies, in collaboration with a team of experienced professionals at Pyxis.
+              This process enabled companies to speed up software delivery, improve quality, and reduce downtime.
+          </li>
+
+          <li>
+            I collaborated in the creation of customized solutions for multinational companies, such as BBVA and Montes del Plata, to optimize their business processes and improve operational efficiency.
+          </li>
+
+          <li>
+            Participated in the implementation of advanced tools and technologies, such as Jenkins, GitLab, Docker, Kubernetes and AWS, to help our clients adapt to technological changes and improve their productivity.
+          </li>
+
+        </ul>
+      </div>
+      <div class="job-content-item" data-tab="2" *ngIf="selectedButtonId===1" [@fade]>
+        <div class="job-content-item-title">Sons of Gods</div>
+        <div class="job-content-item-date">Nov 2021 - Sep 2022</div>
+        <ul>
+          <li>As a full stack developer, I participated in the design and implementation of various web platforms related to the world of cryptocurrencies and NFTs, including an NFT minting platform with different levels of authentication and security.</li>
+          <li>I was part of the team that designed and developed integration tools with different cryptocurrencies and blockchains, allowing users to make transactions and receive payments securely and reliably.</li>
+          <li>I participated in the creation and programming of bots for Discord, which were used to automate various tasks and efficiently control entire servers.</li>
+        </ul>
+      </div>
+      <div class="job-content-item" data-tab="3" *ngIf="selectedButtonId===2" [@fade]>
+        <div class="job-content-item-title">Evolution center</div>
+        <div class="job-content-item-date">Jan 2020 - Dec 2021</div><ul>
+          <li>As a full-time gym owner and personal trainer, I managed all aspects of my business, including marketing, sales, and customer service.</li>
+          <li>I designed and implemented customized workout plans and nutrition programs for a diverse range of clients, helping them achieve their fitness goals and improve their overall health and well-being.</li>
+          <li>With a strong emphasis on personal connection and attention to detail, I fostered a welcoming and supportive environment in my gym, where clients felt comfortable and motivated to reach their full potential.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
