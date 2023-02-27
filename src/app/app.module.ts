@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
 import {NgsRevealModule} from 'ngx-scrollreveal';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
     AboutMeComponent,
     WhereIVeWorkedComponent,
     ProjectsComponent,
-    GetInTouchComponent
+    GetInTouchComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

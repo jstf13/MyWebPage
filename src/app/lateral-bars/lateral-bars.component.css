@@ -127,3 +127,10 @@ aside.sidebar.right {
   margin: 0 auto;
   background-color: black;
 }
+
+
+@media screen and (max-width: 720px){
+  body {
+    display: none;
+  }
+}

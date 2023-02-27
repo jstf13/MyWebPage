@@ -61,3 +61,24 @@ a {
   background-color: rgba(56, 191, 167, 0.11);
   transition: var(--transition);
 }
+
+@media screen and (max-width: 720px){
+  .greeting {
+    width: 100%;
+    align-self: start;  
+  }
+
+  .summary{
+    width: 80%;
+  }
+
+  .buttonContainer{
+    width: 100%;
+    align-items: start;
+  }
+
+  .contact-button{
+    /* alinearlo a la izquierda */
+    align-self: start;    
+  }
+}
