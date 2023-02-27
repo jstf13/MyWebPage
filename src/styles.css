@@ -54,3 +54,27 @@
   width: 100%;
 }
 
+@media screen and (max-width: 720px){
+  .masterBox {
+    padding: 0 5%;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .title {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .contentBox {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .contentBox .text{
+    width: 100%;
+    align-items: start;
+    justify-content: start;
+  }
+}

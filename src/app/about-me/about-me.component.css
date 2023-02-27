@@ -110,3 +110,14 @@ li:before {
   color: #ffffff;
 }
 
+@media screen and (max-width: 720px){
+  .text{
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+}
