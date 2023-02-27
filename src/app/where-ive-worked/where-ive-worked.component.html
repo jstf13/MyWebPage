@@ -1,8 +1,8 @@
-<div class="masterBox">
-  <div class="title">
+<div class="masterBox"  [ngsRevealSet]="{reset:true}" [ngsInterval]="150" [ngsSelector]="'.item-worded'">
+  <div class="item-worded title">
     <h1>Where I've worked</h1>
   </div>
-  <div class="contentBox">
+  <div class="item-worded contentBox">
     <div class="job-tabs">
       <div class="sliding-div" [style.transform]="getTranslation()"></div>
       <button class="tab" (click)="onButtonClick(0)" data-tab="1">Pyxis</button>

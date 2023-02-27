@@ -1,9 +1,9 @@
-<div class="masterBox">
-  <div class="title">
+<div class="masterBox" [ngsRevealSet]="{reset:true}" [ngsInterval]="150" [ngsSelector]="'.item-about'">
+  <div class="item-about title">
     <h1>About me</h1>
   </div>
   <div class="contentBox">
-    <div class="text">
+    <div class="item-about text">
       Hi, I'm Juan, a DevOps developer with experience in full stack web development.
       I currently work as DevOps at Pyxis, where I work on infrastructure automation and developing software solutions for clients.
       <br>
@@ -31,7 +31,7 @@
       </ul>
     </div>
     <div class="container">
-      <div class="container__image">
+      <div class="item-about container__image">
         <div class="container__info container__author">Developer <a class="link" href="https://www.linkedin.com/in/juan-toledo-dev/" target="_blank">Juan Toledo</a></div>
         <div class="container__info container__location">Contact with me: <a class="link" href="https://instagram.com/silvia.diaconescu" target="_blank">Mail</a></div>
       </div>

@@ -10,6 +10,7 @@ import { WhereIVeWorkedComponent } from './where-ive-worked/where-ive-worked.com
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
 import {NgsRevealModule} from 'ngx-scrollreveal';
+import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {NgsRevealModule} from 'ngx-scrollreveal';
     IntroductionComponent,
     AboutMeComponent,
     WhereIVeWorkedComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    GetInTouchComponent
   ],
   imports: [
     BrowserModule,
