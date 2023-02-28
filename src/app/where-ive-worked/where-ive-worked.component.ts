@@ -19,7 +19,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class WhereIVeWorkedComponent{
 
-  constructor() { }
+  constructor() {}
 
   selectedButtonId = 0
 
