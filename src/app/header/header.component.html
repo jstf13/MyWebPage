@@ -1,9 +1,9 @@
 <header [ngsRevealSet]="{reset:true}" [ngsInterval]="150" [ngsSelector]="'.item-header'">
   <nav>
-    <a class="item-header" href="#about">About</a>
-    <a class="item-header" href="#experience">Experience</a>
-    <a class="item-header" href="#work">Work</a>
-    <a class="item-header" href="#contact">Contact</a>
-    <a href="#resume" class="item-header resume-button">Resume</a>
+    <a (click)="scrollToTarget('#about')" class="item-header" href="#about">About</a>
+    <a (click)="scrollToTarget('#experience')" class="item-header" href="#experience">Experience</a>
+    <a (click)="scrollToTarget('#works')" class="item-header" href="#works">Work</a>
+    <a (click)="scrollToTarget('#contact')" class="item-header" href="#contact">Contact</a>
+    <a href="https://drive.google.com/u/0/uc?id=1jCFLnCZi1A_ADjh25Nq7cjtKXc5o1KqP&export=download" download="JuanToledo_RS_2023_EN.pdf" class="item-header resume-button">Resume</a>
   </nav>
 </header>

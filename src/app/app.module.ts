@@ -9,9 +9,11 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { WhereIVeWorkedComponent } from './where-ive-worked/where-ive-worked.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
-import {NgsRevealModule} from 'ngx-scrollreveal';
+import { NgsRevealModule } from 'ngx-scrollreveal';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NgsRevealModule
+    NgsRevealModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
