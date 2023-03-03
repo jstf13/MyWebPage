@@ -12,4 +12,13 @@ export class IntroductionComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sendEmail() {
+    const email = 'juansebastiantoledofreire@hotmail.com';
+    const subject = 'Contact from personal website';
+    const body = 'Hi, I would like to contact you. Please, contact me back.';
+
+    const mailtoUri = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoUri;
+  }
 }

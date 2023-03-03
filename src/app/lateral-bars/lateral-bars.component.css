@@ -23,6 +23,11 @@ aside.sidebar.left {
   bottom: 0;
 }
 
+.logos svg {
+  width: 20px;
+  height: 20px;
+}
+
 .logos {
   width: 40px;
   position: fixed;

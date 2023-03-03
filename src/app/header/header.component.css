@@ -8,6 +8,14 @@ header {
   padding-right: 5px;
 }
 
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  width: 100px;
+}
+
 nav {
   display: flex;
   margin-left: auto;
@@ -38,4 +46,13 @@ a:hover {
   transition: all 0.2s ease-in-out;
   color: #38BFA7;
   background-color: rgba(56, 191, 167, 0.11);
+}
+
+
+@media screen and (max-width: 720px) {
+  .logo{
+    width: 0;
+    visibility: hidden;
+    display: block;
+  }
 }
