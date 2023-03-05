@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkModeService } from '../services/dark-mode.service';
 
 @Component({
   selector: 'app-lateral-bars',
   templateUrl: './lateral-bars.component.html',
-  styleUrls: ['./lateral-bars.component.css']
+  styleUrls: ['./lateral-bars.component.css', '../../styles.css']
 })
 export class LateralBarsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public darkModeService: DarkModeService) { }
 
   ngOnInit(): void {
   }

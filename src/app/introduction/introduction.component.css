@@ -24,7 +24,7 @@
   font-size: clamp(40px, 7vw, 80px);
   font-weight: 600;
   line-height: 1.1;
-  color: #38BFA7;
+  color: var(--primary-color);
 }
 
 .summary{
@@ -48,16 +48,16 @@ a {
 }
 
 .contact-button{
-  border: 1px solid #38BFA7;
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
-  color: #38BFA7;
+  color: var(--primary-color);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .contact-button:hover {
-  color: #38BFA7;
+  color: var(--primary-color);
   background-color: rgba(56, 191, 167, 0.11);
   transition: var(--transition);
 }

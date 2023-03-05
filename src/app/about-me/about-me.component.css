@@ -9,7 +9,7 @@
 }
 
 .text b{
-  color:#06c0a8;
+  color:var(--primary-color);
 }
 
 ul {
@@ -28,7 +28,7 @@ li{
 
 li:before {
   content: "›";
-  color: #06c0a8;
+  color: var(--primary-color);
   margin-right: 8px;
 }
 
@@ -101,12 +101,12 @@ li:before {
 
 .link {
   border-bottom: 1px solid transparent;
-  color: #06c0a8;
+  color: var(--primary-color);
   text-decoration: none;
   transition: ease-in 0.13s;
 }
 .link:hover {
-  background-color: #06c0a8;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 

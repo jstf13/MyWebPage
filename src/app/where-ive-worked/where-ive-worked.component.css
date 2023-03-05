@@ -35,7 +35,7 @@
 .sliding-div {
   width: 2px;
   height: 45px; /* para que tenga la misma altura que el contenedor */
-  background-color: #38BFA7; /* color de fondo */
+  background-color: var(--primary-color); /* color de fondo */
   position: absolute; /* para que sea absoluto y se posicione a la izquierda */
   left: 0;
   top: 0;
@@ -66,6 +66,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0;
+  color: black;
 }
 
 .job-content-item-date{
@@ -90,6 +91,6 @@ li {
 
 li:before {
   content: "›";
-  color: #06c0a8;
+  color: var(--primary-color);
   margin-right: 8px;
 }

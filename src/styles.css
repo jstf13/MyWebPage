@@ -9,7 +9,7 @@
 
 
 :root {
-  --primary-color: #38BFA7;
+  --primary-color: #24832f;
   --secondary-color: rgba(82, 69, 130, 0.04);
   --tertiary-color: #8FE1A2;  
   --quaternary-color: #367BC3;
@@ -17,6 +17,10 @@
   --tab-height: 45px;
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --fz-xs: 12px;
+}
+
+body{
+  margin: 0;
 }
 
 .masterBox {
@@ -34,7 +38,7 @@
 
 .title {
   width: 100%;
-  border-bottom: 1px solid #38BFA7;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .contentBox {
@@ -52,6 +56,21 @@
 
 .contentBox .text{
   width: 100%;
+}
+
+.dark-mode-background {
+  background-color: #222 !important;
+  color: white !important;
+  transition: all var(--transition);
+  stroke: #fff;
+}
+
+.dark-mode-background .logos ul::after {
+  background-color: white;
+}
+
+.dark-mode-background .mail::after {
+  background-color: white;
 }
 
 @media screen and (max-width: 720px){

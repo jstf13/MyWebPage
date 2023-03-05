@@ -1,19 +1,14 @@
 import { Component } from '@angular/core';
-import {NgsRevealConfig} from 'ngx-scrollreveal';
+import { DarkModeService } from './services/dark-mode.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [NgsRevealConfig]
+  styleUrls: ['./app.component.css', '../styles.css'],
+  providers: []
 })
 export class AppComponent {
-  title = 'MyWebPage';
+  darkMode = false;
 
-  constructor(config: NgsRevealConfig) {
-    // customize default values of ngx-scrollreveal directives used by this component tree
- 
-    //other options here
-    //make it dalay 2 second
-  }
+  constructor(public darkModeService: DarkModeService) { }
 }

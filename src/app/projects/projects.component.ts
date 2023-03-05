@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DarkModeService } from '../services/dark-mode.service';
 
 interface Card {
   title: string;
@@ -10,9 +11,12 @@ interface Card {
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css', '../../styles.css']
 })
 export class ProjectsComponent {
+
+  constructor(public darkModeService: DarkModeService) { }
+
   cards: Card[] = [
     {
       title: 'Sons of Gods',

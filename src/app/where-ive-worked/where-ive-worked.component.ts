@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { DarkModeService } from '../services/dark-mode.service';
 
 @Component({
   selector: 'app-where-ive-worked',
   templateUrl: './where-ive-worked.component.html',
-  styleUrls: ['./where-ive-worked.component.css'],
+  styleUrls: ['./where-ive-worked.component.css', '../../styles.css'],
   animations: [
     trigger('fade', [
       transition(':enter', [
@@ -19,7 +20,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class WhereIVeWorkedComponent{
 
-  constructor() {}
+  constructor(public darkModeService: DarkModeService) {}
 
   selectedButtonId = 0
 

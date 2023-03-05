@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkModeService } from '../services/dark-mode.service';
 
 @Component({
   selector: 'app-get-in-touch',
   templateUrl: './get-in-touch.component.html',
-  styleUrls: ['./get-in-touch.component.css']
+  styleUrls: ['./get-in-touch.component.css', '../../styles.css']
 })
 export class GetInTouchComponent implements OnInit {
 
-  constructor() { }
+  constructor(public darkModeService: DarkModeService) { }
 
   ngOnInit(): void {
   }

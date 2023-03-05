@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { DarkModeService } from '../services/dark-mode.service';
 
 @Component({
   selector: 'app-introduction',
   templateUrl: './introduction.component.html',
-  styleUrls: ['./introduction.component.css']
+  styleUrls: ['./introduction.component.css', '../../styles.css']
 })
 export class IntroductionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public darkModeService: DarkModeService) { }
 
   ngOnInit(): void {
   }

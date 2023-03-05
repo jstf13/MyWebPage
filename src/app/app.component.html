@@ -1,8 +1,10 @@
-<app-header></app-header>
-<app-lateral-bars></app-lateral-bars>
-<app-introduction ngsReveal></app-introduction>
-<app-about-me ngsReveal></app-about-me>
-<app-where-ive-worked ngsReveal></app-where-ive-worked>
-<app-projects ngsReveal></app-projects>
-<app-get-in-touch ngsReveal></app-get-in-touch>
-<app-footer ngsReveal></app-footer>
+<div class="all-back" [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }">
+    <app-header></app-header>
+    <app-lateral-bars></app-lateral-bars>
+    <app-introduction ngsReveal></app-introduction>
+    <app-about-me ngsReveal></app-about-me>
+    <app-where-ive-worked ngsReveal></app-where-ive-worked>
+    <app-projects ngsReveal></app-projects>
+    <app-get-in-touch ngsReveal></app-get-in-touch>
+    <app-footer ngsReveal></app-footer>
+</div>

@@ -22,12 +22,12 @@
 }
 
 .card:hover .card-Title a:hover{
-  color: #38BFA7;
+  color: var(--primary-color);
   transition: var(--transition);
 }
 
 .right-corner:hover svg.feather-github path {
-  stroke: #38BFA7;
+  stroke: var(--primary-color);
   transition: var(--transition);
 }
 
@@ -36,7 +36,7 @@
   top: 10px;
   left: 10px;
   width: 40px;
-  color: #38BFA7;
+  color: var(--primary-color);
 }
 
 .right-corner {
