@@ -13,7 +13,7 @@
   --secondary-color: rgba(82, 69, 130, 0.04);
   --tertiary-color: #8FE1A2;  
   --quaternary-color: #367BC3;
-  --transition: all 0.25s cubic-bezier(0.65, 0.05, 0.36, 1);
+  --transition: all 0.5s ease-in-out;
   --tab-height: 45px;
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --fz-xs: 12px;
@@ -21,6 +21,7 @@
 
 body{
   margin: 0;
+  transition: var(--transition);
 }
 
 .masterBox {
@@ -52,6 +53,7 @@ body{
   position: relative;
   flex-wrap: wrap;
   max-width: 1000px;
+  transition: var(--transition);
 }
 
 .contentBox .text{
@@ -67,10 +69,12 @@ body{
 
 .dark-mode-background .logos ul::after {
   background-color: white;
+  transition: all var(--transition);
 }
 
 .dark-mode-background .mail::after {
   background-color: white;
+  transition: all var(--transition);
 }
 
 @media screen and (max-width: 720px){

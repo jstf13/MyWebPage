@@ -54,7 +54,6 @@ aside.sidebar.left {
   justify-content: center;
   margin-bottom: 10px;
   width: 100%;
-  transition: all 0.5s ease-in-out;
   filter: brightness(1);
   border-radius: 50%;
 }
@@ -75,7 +74,6 @@ aside.sidebar.left {
 }
 
 .logos ul li:hover{
-  transition: all 0.5s ease-in-out;
   filter: brightness(1.5);
   transform: scale(1.2) rotate(10deg);
   border-radius: 50%;
@@ -102,7 +100,6 @@ aside.sidebar.right {
   -webkit-box-align: center;
   align-items: center;
   position: relative;
-  transition: all 0.5s ease-in-out;
 }
 
 .mail a{
@@ -116,11 +113,9 @@ aside.sidebar.right {
   text-decoration-skip-ink: auto;
   color: inherit;
   position: relative;
-  transition: all 0.5s ease-in-out;
 }
 
 .mail a:hover{
-  transition: all 0.5s ease-in-out;
   filter: brightness(1.5);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }

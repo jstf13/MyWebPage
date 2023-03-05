@@ -8,6 +8,7 @@ import { DarkModeService } from '../services/dark-mode.service';
   styleUrls: ['./header.component.css', '../../styles.css']
 })
 export class HeaderComponent implements OnInit {
+  menuOpen = false;
 
 constructor(private scrollService: ScrollService,
            public darkModeService: DarkModeService) {}
@@ -21,4 +22,14 @@ constructor(private scrollService: ScrollService,
     const target = document.querySelector(id);
     this.scrollService.scrollToTarget(target as HTMLElement, 1000);
   }
+
+  toggleMenu() {
+    let menuItemsList = document.getElementById("menu-items-list");
+    if(menuItemsList == null) return;
+  
+    if(menuItemsList.classList.contains("active"))
+      menuItemsList.classList.remove("active");
+     else 
+      menuItemsList.classList.add("active");
+  } 
 }
