@@ -13,7 +13,7 @@ import { DarkModeService } from '../services/dark-mode.service';
         animate(1100, style({ opacity: 1 }))
       ]),
       transition(':leave', [
-        animate(200, style({ opacity: 0 }))
+        animate(0, style({ opacity: 0 }))
       ])
     ])
   ]
