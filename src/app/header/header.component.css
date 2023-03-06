@@ -133,9 +133,11 @@ input:checked + .slider:before {
 @media screen and (max-width: 720px) {
   header{
     justify-content: flex-end;
+    position: relative;
   }
-
+  
   .menu-toggle{
+    font-size: 20px;
     display: block;
     margin-left: auto;
     margin-right: 10px;
@@ -148,20 +150,23 @@ input:checked + .slider:before {
 
   .menu-items {
     display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
   }
 
-  .menu-items a{
+  .menu-items.active a {
     color: #ffffff;
   }
 
   .menu-items.active {
-    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
   }
-
+  
   .menu-items li {
     margin: 1rem 0;
   }
