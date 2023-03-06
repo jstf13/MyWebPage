@@ -2,22 +2,27 @@
   <div class="logo">
     <!-- <img src="https://i.imgur.com/Zt64FNi.png" alt="Logo"> -->
   </div>
-  <nav>
-    <button [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" class="menu-toggle" (click)="toggleMenu()">☰</button>
-    <ul class="menu-items" id="menu-items-list">
-      <li>  
-        <div class="theme-switcher">
-          <label class="switch">
-            <input type="checkbox" (change)="darkModeService.toggleDarkMode()" id="theme-toggle" checked>
-            <span class="slider round"></span>
-          </label>
-        </div>
-      </li>
-      <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#about')" class="item-header" href="#about">About</a></li>
-      <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#experience')" class="item-header" href="#experience">Experience</a></li>
-      <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#works')" class="item-header" href="#works">Work</a></li>
-      <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#contact')" class="item-header" href="#contact">Contact</a></li>
-      <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" href="https://drive.google.com/u/0/uc?id=1jCFLnCZi1A_ADjh25Nq7cjtKXc5o1KqP&export=download" download="JuanToledo_RS_2023_EN.pdf" class="item-header resume-button">Resume</a></li>
-    </ul>
-  </nav>
+    <nav>  
+      <div class="menu-container" id="menu-container"></div>
+ 
+        <button [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" class="menu-toggle" [class.active]="menuActive" (click)="toggleMenu()">
+          <span></span>
+        </button>
+
+        <ul class="menu-items" id="menu-items-list" [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }">
+          <li>  
+            <div class="theme-switcher">
+              <label class="switch">
+                <input type="checkbox" (change)="darkModeService.toggleDarkMode()" id="theme-toggle" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#about'); toggleMenu()" class="item-header" href="#about">About</a></li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#experience'); toggleMenu()" class="item-header" href="#experience">Experience</a></li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#works'); toggleMenu()" class="item-header" href="#works">Work</a></li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#contact'); toggleMenu()" class="item-header" href="#contact">Contact</a></li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="toggleMenu()" href="https://drive.google.com/u/0/uc?id=1jCFLnCZi1A_ADjh25Nq7cjtKXc5o1KqP&export=download" download="JuanToledo_RS_2023_EN.pdf" class="item-header resume-button">Resume</a></li>
+        </ul>
+    </nav>
 </header>

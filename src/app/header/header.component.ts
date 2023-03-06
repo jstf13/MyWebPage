@@ -9,6 +9,7 @@ import { DarkModeService } from '../services/dark-mode.service';
 })
 export class HeaderComponent implements OnInit {
   menuOpen = false;
+  menuActive: boolean = false;
 
   constructor(
     private scrollService: ScrollService,
@@ -25,14 +26,20 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu() {
+    const menuContainer = document.getElementById('menu-container');
     const menuItemsList = document.getElementById('menu-items-list');
+    if (menuContainer == null) return;
     if (menuItemsList == null) return;
 
-    if (menuItemsList.classList.contains('active')) {
+    if (menuItemsList.classList.contains('active') && menuContainer.classList.contains('active')) {
       menuItemsList.classList.remove('active');
+      menuContainer.classList.remove('active');
     } else {
       menuItemsList.classList.add('active');
+      menuContainer.classList.add('active');
     }
+
+    this.menuActive = !this.menuActive;
   }
 
   @HostListener('document:click', ['$event'])
@@ -54,4 +61,11 @@ export class HeaderComponent implements OnInit {
       this.toggleMenu();
     }
   }
+
+  changeSpanBackground() {
+    const spans = document.querySelectorAll('span');
+    for (let i = 0; i < spans.length; i++) {
+      spans[i].style.backgroundColor = this.darkModeService.darkMode ? '#222' : '#fff';
+    }
+  }  
 }
