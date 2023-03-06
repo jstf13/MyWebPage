@@ -1,5 +1,5 @@
 .text{
-  width: 55%;
+  width: 55% !important;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.1;
@@ -75,6 +75,7 @@ li:before {
   opacity: 0;
   z-index: -1;
 }
+
 .container__image .container__info {
   position: relative;
   line-height: 1.8;
@@ -82,9 +83,11 @@ li:before {
   opacity: 0;
   z-index: 10000 !important;
 }
+
 .container__image .container__location {
   transition-delay: 0.15s;
 }
+
 .container__image:hover {
   border-radius: 0;
   transform: scale(1.1);
@@ -110,9 +113,9 @@ li:before {
   color: #ffffff;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 1350px){
   .text{
-    width: 100%;
+    width: 100% !important;
     font-size: 15px;
   }
 

@@ -67,6 +67,10 @@ body{
   stroke: #fff;
 }
 
+.dark-mode-wppLogo {
+  fill: #fff
+}
+
 .dark-mode-background .logos ul::after {
   background-color: white;
   transition: all var(--transition);
