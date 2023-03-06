@@ -77,6 +77,23 @@ body{
   transition: all var(--transition);
 }
 
+/* Barra de desplazamiento en Chrome */
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #222;
+}
+
+::-webkit-scrollbar-track {
+  background: #636363;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #222;
+}
+
+
 @media screen and (max-width: 720px){
   .masterBox {
     padding: 0 5%;

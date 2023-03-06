@@ -116,6 +116,7 @@ input:checked + .slider:before {
 
 .menu-toggle{
   display: none;
+  color: #333;
 }
 
 .menu-items {
@@ -137,13 +138,12 @@ input:checked + .slider:before {
   }
   
   .menu-toggle{
-    font-size: 20px;
+    font-size: 30px;
     display: block;
     margin-left: auto;
     margin-right: 10px;
     cursor: pointer;
     background-color: transparent;
-    color: #ffffff;
     text-align: right;
     border: none;
   }
@@ -154,10 +154,6 @@ input:checked + .slider:before {
     top: 100%;
     right: 0;
     z-index: 1000;
-  }
-
-  .menu-items.active a {
-    color: #ffffff;
   }
 
   .menu-items.active {

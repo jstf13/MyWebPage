@@ -3,7 +3,7 @@
     <!-- <img src="https://i.imgur.com/Zt64FNi.png" alt="Logo"> -->
   </div>
   <nav>
-    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+    <button [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" class="menu-toggle" (click)="toggleMenu()">☰</button>
     <ul class="menu-items" id="menu-items-list">
       <li>  
         <div class="theme-switcher">
