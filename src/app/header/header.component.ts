@@ -2,6 +2,7 @@ import { Component, OnInit, Output, EventEmitter, HostListener } from '@angular/
 import { ScrollService } from '../services/scroll.service';
 import { DarkModeService } from '../services/dark-mode.service';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,6 +11,7 @@ import { DarkModeService } from '../services/dark-mode.service';
 export class HeaderComponent implements OnInit {
   menuOpen = false;
   menuActive: boolean = false;
+  currentLanguage: string = 'en';
 
   constructor(
     private scrollService: ScrollService,
@@ -67,5 +69,12 @@ export class HeaderComponent implements OnInit {
     for (let i = 0; i < spans.length; i++) {
       spans[i].style.backgroundColor = this.darkModeService.darkMode ? '#222' : '#fff';
     }
-  }  
+  }
+
+  @Output() languageChanged = new EventEmitter<string>();
+  changeLanguage(lang: string) {
+    this.languageChanged.emit(lang);
+    this.currentLanguage = lang;
+  }
+  
 }

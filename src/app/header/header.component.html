@@ -18,11 +18,14 @@
               </label>
             </div>
           </li>
-          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#about'); toggleMenu()" class="item-header" href="#about">About</a></li>
-          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#experience'); toggleMenu()" class="item-header" href="#experience">Experience</a></li>
-          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#works'); toggleMenu()" class="item-header" href="#works">Work</a></li>
-          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#contact'); toggleMenu()" class="item-header" href="#contact">Contact</a></li>
-          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="toggleMenu()" href="https://drive.google.com/u/0/uc?id=1jCFLnCZi1A_ADjh25Nq7cjtKXc5o1KqP&export=download" download="JuanToledo_RS_2023_EN.pdf" class="item-header resume-button">Resume</a></li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#about'); toggleMenu()" class="item-header" href="#about" translate>About</a></li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#experience'); toggleMenu()" class="item-header" href="#experience" translate>Experience</a></li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#works'); toggleMenu()" class="item-header" href="#works" translate>Work</a></li>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="scrollToTarget('#contact'); toggleMenu()" class="item-header" href="#contact" translate>Contact</a></li>
+          <button (click)="changeLanguage('en')" *ngIf="currentLanguage == 'es'">EN</button>
+          <button (click)="changeLanguage('es')" *ngIf="currentLanguage == 'en'">ES</button>
+          <li><a [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }" (click)="toggleMenu()" href="https://drive.google.com/u/0/uc?id=1jCFLnCZi1A_ADjh25Nq7cjtKXc5o1KqP&export=download" download="JuanToledo_RS_2023_EN.pdf" class="item-header resume-button" translate>Resume</a></li>
+
         </ul>
     </nav>
 </header>

@@ -13,11 +13,14 @@ import { NgsRevealModule } from 'ngx-scrollreveal';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent, 
     HeaderComponent,
     LateralBarsComponent,
     IntroductionComponent,
@@ -31,9 +34,23 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     BrowserAnimationsModule,
     NgsRevealModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
+        },
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

@@ -1,17 +1,17 @@
 <div id="#introduction" class="masterBox" [ngsRevealSet]="{ reset:true}" [ngsInterval]="300" [ngsSelector]="'.item'"  [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }">
   <div class="item greeting">
-    <h4>Hi, I'm</h4>
+    <h4 translate>Hi, I'm</h4>
   </div>
   <div class="item name">
-    <h1><span class="nameText">Juan Toledo</span></h1>
-    <h2><span class="job">I'm a Web Developer</span></h2>
+    <h1><span class="nameText" translate>Juan Toledo</span></h1>
+    <h2><span class="job" translate>I'm a Web Developer</span></h2>
   </div>
   <div class="item summary">
-    <p>I am currently working as DevOps at Pyxis.
+    <p translate>I am currently working as DevOps at Pyxis.
       I have experience in web development and I am passionate about understanding new
       technologies in depth and quickly acquiring new knowledge.</p>
   </div>
   <div class="item buttonContainer">
-    <a href="#" (click)="sendEmail()" class="contact-button">Contact with me</a>
+    <a href="#" (click)="sendEmail()" class="contact-button" translate>Contact with me</a>
   </div>
 </div>

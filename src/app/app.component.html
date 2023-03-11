@@ -1,5 +1,5 @@
 <div class="all-back" [ngClass]="{ 'dark-mode-background': darkModeService.darkMode }">
-    <app-header></app-header>
+    <app-header (languageChanged)="changeLanguage($event)"></app-header>
     <app-lateral-bars></app-lateral-bars>
     <app-introduction ngsReveal></app-introduction>
     <app-about-me ngsReveal></app-about-me>
